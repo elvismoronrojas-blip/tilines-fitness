@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUERPO COMPLETO</title> <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+ <header>
+        <div class="logo">
+            <img src="img/LOGODEIMAGEN.jpeg" alt="" width="50" />
+            <h2>Tilines-Fitness</h2>
+        </div>
+
+        <button class="boton-desplegable" id="boton-desplegable">☰</button>
+
+        <nav id="nav">
+
+            <a href="inicio.html">Inicio</a>
+
+            <div class="desplegable" id="menuCatalogo">
+                <button class="boton-menu" id="botonCatalogo">CATÁLOGO ▾</button>
+                <div class="contenido-desplegable">
+                    <a href="pesocorporal.html">Peso Corporal</a>
+                    <a href="mancuernas.html">Mancuernas</a>
+                    <a href="poleas.html">Poleas</a>
+                    <a href="barra.html">Barra</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <h1 style="font-size: 3rem;">Cuerpo Completo con Peso Corporal</h1>
+
+    <h2>¿Por qué es mejor opción entrenar el cuerpo completo?</h2>
+    <div style="text-align: justify; width: 50%;font-family: Outfit; font-size: 1.5rem;">
+    <p>es una mejor opción porque permite desarrollar la fuerza y la resistencia de manera equilibrada.
+         Cuando solo se trabaja una parte del cuerpo, pueden aparecer desequilibrios musculares que afectan la postura y aumentan el riesgo de lesiones.
+          En cambio, al entrenar todo el cuerpo, se activan varios grupos musculares al mismo tiempo, mejorando la coordinación, la movilidad y el control corporal.
+         Además, este tipo de entrenamiento es más funcional, ya que prepara el cuerpo para moverse mejor en las actividades diarias y deportivas, sin necesidad de usar pesas ni equipos especiales.</p>
+        </div>
+
+        <ul style="font-size: 1.5rem;font-family: Outfit;text-align: justify; ">
+        <li>Plan de entrenamiento detallado</li>
+        <li>Videos explicativos</li>
+        <li>Supervisaremos tus entrenamientos</li> 
+        <li>Aclararemos cualquier duda que tengas durante el entrenamiento</li>
+    </ul>
+    <h1>Si te intereso el plan, puedes adquirirlo en este botón</h1>
+    <button class="boton-comprar" onclick="mostrarPago()">Adquirir plan</button>
+<div id="contenido-pagar">
+  <img src="imgQR/cuerpocompletopesocorporal.jpg" alt="Código QR" class="qr-pago">
+  <p>¿Ya realizaste el pago? Envía el comprobante 
+    <a href="https://wa.me/59177827260" target="_blank" class="enlace-whatsap">a este enlace</a>.
+  </p>
+</div>
+
+
+    <script src="java.js"></script>
+</body>
+</html>

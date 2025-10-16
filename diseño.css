@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+
+body {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background-color: #fff;
+}
+
+
+
+header {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(231, 71, 71);
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/*TODO ESTO ES LA FUNCION DEL ENCABEZADO*/
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(109, 109, 230);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Desplegable */
+.desplegable {
+  position: relative;
+  display: inline-block;
+}
+
+.boton-menu {
+  background-color: transparent;
+  color: rgb(109, 109, 230);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-family: "BBH Sans Bogle", sans-serif;
+  transition: 0.3s;
+}
+
+.boton-menu:hover {
+  color: white;
+}
+
+.contenido-desplegable {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgb(109, 109, 230);
+  border-radius: 8px;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.contenido-desplegable a {
+  color: rgb(109, 109, 230);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.contenido-desplegable a:hover {
+  background-color: rgb(109, 109, 230);
+  color: white;
+  border-radius: 8px;
+}
+
+/* 👇 esta es la clave */
+.desplegable.open .contenido-desplegable {
+  display: flex;
+}
+
+/* Hamburguesa */
+.boton-desplegable {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .boton-desplegable {
+    display: block;
+  }
+}
+/* AQUI TERMINA SOLO ENCABEZADO*/
+
+
+
+
+.inicio-recuadro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto-arriba {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin: 10px 0;
+}
+
+
+.titulo-seccion {
+  color: gray;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-left: 5%;
+}
+
+.cuadro-quienessomos {
+  max-width: 150%;
+  padding: 1rem;
+  
+}
+
+.imagen-quienessomos{
+  width: 60%;
+  height: 20;
+  margin-left: 20%;
+  border-radius: 40px;
+}
+
+.textoquienes-somos {
+  text-align: justify;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-family: "Outfit", sans-serif;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+.cuadro-textoimagen{
+  columns: 2;
+}
+
+
+.contenedor-frase {
+  max-width: 900px;
+  margin: 60px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.frase-recuadro {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin: 0 0 10px 0;
+}
+
+.frase-motivacional {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.catalogo-planes {
+  background-color: rgb(53, 47, 47);
+  height: auto;
+
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .contenedor-frase {
+    margin: 40px 20px;
+  }
+
+  .cuadro-quienessomos {
+    padding: 1rem 2rem;
+  }
+}
+
+
+
+
+.texto-pesocorporal {
+  font-family: "Outfit", sans-serif;
+  font-weight: weight;
+  font-style: normal;
+  text-align: center;
+  color: white;
+
+
+
+}
+
+.catalogotexto-pesocorporal {
+  max-width: 100%;
+  border: 2px solid;
+  background-color: black;
+  border-radius: 20px;
+
+
+
+}
+
+.imagen-pesocorporal {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+
+
+}
+
+.link-pesocorporal {
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  border: 2px solid cornflowerblue;
+  border-radius: 20px;
+  margin-left: 35%;
+  background-color: cornflowerblue;
+  color: white;
+  
+}
+
+.link-pesocorporal:hover {
+  background-color: blue;
+  border: blue;
+}
+
+
+
+.catalogo-pesocorporal {
+  flex: 0 0 32%;
+  max-width: 32%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+
+  .catalogo-pesocorporal {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .tarjetas-principiantes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .texto-pesocorporal {
+    font-family: "Outfit", sans-serif;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    color: white;
+
+
+
+  }
+
+  .catalogotexto-pesocorporal {
+    max-width: 100%;
+    border: 2px solid;
+    background-color: black;
+
+
+
+  }
+
+  .imagen-pesocorporal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+
+  }
+
+  .link-pesocorporal {
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    border: 2px solid cornflowerblue;
+    border-radius: 20px;
+    margin-left: 30%;
+    background-color: cornflowerblue;
+    color: white;
+  }
+
+  .link-pesocorporal:hover {
+    background-color: blue;
+    border: blue;
+  }
+
+
+
+
+}
+
+.catalogo-pesocorporal:nth-child(7) {
+  margin: 0 auto;
+  flex: 0 0 32%;
+  max-width: 32%;
+}
+
+
+
+
+.tarjetas-principiantes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*ESTO ES LA PARTE DEL REGISTRO */
+.cuerpo-registro{
+  margin: 0;
+  padding: 30%;
+  background-color: red;
+  height: 50%;
+
+}
+.iniciar-sesion{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+}
+.iniciar-sesion h1{
+  text-align: center;
+  padding: 0 0 10% 0;
+  border-bottom: 1px solid silver;
+}
+.iniciar-sesion form{
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+form .Nombre-Usuario{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 15% 0;
+}
+.Nombre-Usuario input{
+  width: 100%;
+  padding: 0 2%;
+  height: 50%;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  text-align: center;
+}
+.Nombre-Usuario label{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+  transition: .5s;
+}
+.Nombre-Usuario span::before{
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  background: #6c3483;
+  transition: .5s;
+}
+.Nombre-Usuario input:focus ~ label,
+.Nombre-Usuario input:focus ~ label{
+  top: -1rem;
+  color: #6c3483;
+}
+.Nombre-Usuario input:focus ~ span::before,
+.Nombre-Usuario input:focus ~ span::before{
+  width: 100%;
+}
+.recordar{
+  margin: -2.5% 0 10% 2.5%;
+  color: blue;
+  cursor: pointer;
+}
+.recordar:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 25%;
+  border: 1px solid;
+  background: #6c3483;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: purple;
+  transition: .5s;
+}
+.registrarse{
+  margin: 15% 0;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+}
+.registrarse a {
+  color: blue;
+  text-decoration: none;
+}
+.registrarse a:hover{
+  text-decoration: underline;
+}
+
+/*HASTA AQUI TERMINA*/
+
+
+/*ESTO ACOMODA PARA CELULAR EL INICIO DE SESION*/
+@media (max-width: 720px){
+  .iniciar-sesion{
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+
+  }
+
+}
+/*HASTA AQUI TERMINA*/
+
+/*AQUI ES LA FORMA DE PAGO QR*/
+#contenido-pagar {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-pago {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.enlace-whatsap {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+.boton-comprar {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton-comprar:hover {
+  background-color: #0056b3;
+}
+
+.contenido-pagar{
+  display: none;
+  margin-top: 20%;
+}
+
+.qr-pago img{
+ width: 30%;
+ border: 30px;
+
+
+}
+
+.enlace-whatsap{
+  text-decoration: none;
+  color: green;
+}
+
+
+/*HASTA AQUI TERMINA*/
